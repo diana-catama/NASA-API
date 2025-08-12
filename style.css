@@ -1,0 +1,9 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('pilares-de-creacion-nircam-11082.jpg');
+    background-size: cover;       /* Hace que cubra toda la pantalla */
+    background-position: center;  /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que se repita */
+    height: 100vh;
+}
