@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     background-image: url("https://cdn.pixabay.com/photo/2022/06/08/05/47/stars-7249785_1280.jpg");
-    background-size: contain;   
+    background-size: cover;   
     font-family: "Kavoon", serif;
 }
 
