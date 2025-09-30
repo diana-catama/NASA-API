@@ -21,7 +21,7 @@ Buscar.addEventListener("click", () => {
 
         if (info.media_type === "image") {
             contenidoExtra = info.url ? 
-                `<img src="${info.url}" alt="${info.title}" class="img-fluid rounded shadow">` :
+                `<img src="${info.url}" alt="${info.title}" class="img-fluid rounded shadow imgstyle">` :
                 `<p class="text-warning">📷 Imagen no encontrada para esta fecha</p>`;
         } 
         else if (info.media_type === "video") {
@@ -32,10 +32,11 @@ Buscar.addEventListener("click", () => {
         }
 
         contenedorImagen.innerHTML = `
-            <div class="card bg-dark text-light shadow-lg p-3">
+            <div class="card contenedorImagen p-3">
                 <h2>${info.title}</h2>
                 ${contenidoExtra}
                 <p class="mt-3">${info.explanation}</p>
+                <button class="btn favoritoBtn" onclick="guardarFavorito()">Guardar como favorito ❤️</button>
             </div>
         `;
     });
@@ -84,7 +85,7 @@ function actualizarListaFavoritos() {
         const favDiv = document.createElement('div');
         favDiv.classList.add("col-md-3");
         favDiv.innerHTML = `
-            <div class="card bg-secondary text-light shadow-lg p-2">
+            <div class="card card-favoritos p-2">
                 <h5>${data.title}</h5>
                 ${data.media_type === "image" 
                     ? `<img src="${data.url}" alt="${data.title}" class="img-fluid rounded">` 

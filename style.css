@@ -1,9 +1,65 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url('pilares-de-creacion-nircam-11082.jpg');
-    background-size: cover;       /* Hace que cubra toda la pantalla */
-    background-position: center;  /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que se repita */
-    height: 100vh;
+    background-image: url("https://cdn.pixabay.com/photo/2022/06/08/05/47/stars-7249785_1280.jpg");
+    background-size: contain;   
+    font-family: "Kavoon", serif;
+}
+
+h1, h3 {
+    font-size: 50px;
+    color: #62008b;
+    -webkit-text-stroke: 2px white;
+    text-align: center;
+}
+
+.contenedor-busqueda {
+    background-image: url(https://cdn.pixabay.com/photo/2016/06/08/11/53/stars-1443706_1280.jpg);
+    color: white;
+    border: 2px solid white;
+}
+
+.form-label {
+    font-size: 25px;
+}
+
+.searchBtn {
+    color: white;
+    background-color: #62008b;
+}
+
+.searchBtn:hover {
+    background-color: blueviolet;
+}
+
+.favoritoBtn {
+    color: white;
+    background-color: #1e60d2;
+    width: 300px;
+    margin: auto;
+    border: 2px solid white;
+}
+
+.favoritoBtn:hover {
+    background-color: #004fd8;
+    border: 2px solid white;
+}
+
+.contenedorImagen {
+    background-color: #002159;
+    border: 5px dashed white;
+    color: white;
+}
+
+.imgstyle {
+    border: 3px solid white;
+}
+
+.card-favoritos {
+    background-color: #62008b;
+    color: white;
+}
+
+.card-favoritos:hover {
+    transform: scale(1.01);
 }
